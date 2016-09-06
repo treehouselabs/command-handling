@@ -1,0 +1,51 @@
+{
+  "name": "treehouselabs/command-handling",
+  "type": "library",
+  "keywords": ["command", "command bus", "command handling"],
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Mark van Duijker",
+      "email": "mark@treehouse.nl",
+      "role": "Developer"
+    },
+    {
+      "name": "Jeroen Fiege",
+      "email": "jeroen@treehouse.nl",
+      "role": "Developer"
+    },
+    {
+      "name": "Marco Janssen",
+      "email": "marco@treehouse.nl",
+      "role": "Developer"
+    }
+  ],
+  "require": {
+    "php": ">=5.6"
+  },
+  "require-dev": {
+    "treehouselabs/message-bus": "*",
+    "phpunit/phpunit": "*"
+  },
+  "suggest": {
+    "treehouselabs/message-bus": ""
+  },
+  "autoload": {
+    "psr-4": {
+      "TreeHouse\\CommandHandling\\": "src/TreeHouse/CommandHandling/"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "TreeHouse\\CommandHandling\\Tests\\": "tests/TreeHouse/CommandHandling/Tests/"
+    }
+  },
+  "scripts": {
+    "test": "phpunit"
+  },
+  "extra": {
+    "branch-alias": {
+      "dev-master": "1.0-dev"
+    }
+  }
+}
